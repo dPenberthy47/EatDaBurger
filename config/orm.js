@@ -1,5 +1,5 @@
 // import MySQl connection
-let connection = require("connection.js");
+let connection = require("../config/connection.js");
 
 //helper for SQL Syntax
 //passes question marks into our queries
