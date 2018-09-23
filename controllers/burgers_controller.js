@@ -33,9 +33,9 @@ router.put("/api/burgers/:id", (req, res) => {
         burger.update({
             devoured: req.body.devoured
         }, condition, (results) => {
-            if (res.affectedRows == 0) {
+            if (results.changedRows == 0) {
             //if no rows were affected, then the ID msut not exist, so 404 it
-            return results.status(404).end();
+            return res.status(404).end();
         } else {
             res.status(200).end();
         }
