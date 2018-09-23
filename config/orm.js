@@ -92,4 +92,4 @@ let orm = {
 
 };
 
-modeul.exports = orm;
+module.exports = orm;
