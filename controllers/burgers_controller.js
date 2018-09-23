@@ -5,9 +5,9 @@ let router = express.Router();
 let burger = require("../models/burger.js");
 
 router.get("/", (req, res) => {
-    burger.all(data => {
+    burger.all((data) => {
         let hbsObject = {
-            burgers = data
+            burgers: data
         };
 
         console.log(hbsObject);
